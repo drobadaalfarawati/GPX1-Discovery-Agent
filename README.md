@@ -6,7 +6,7 @@ A compact demonstration of a **scientific learning layer** for small-molecule di
 
 For the complete end-to-end walkthrough, open:
 
-`00_GPX1_interview_demo.ipynb.ipynb`
+[`notebooks/00_GPX1_interview_demo.ipynb`](notebooks/00_GPX1_interview_demo.ipynb)
 
 This notebook presents the full project story in one place: molecular modeling, scaffold-aware evaluation, closed-loop experiment selection, reward engineering, Q-learning, and reward ablation.
 
@@ -44,7 +44,7 @@ The curated development dataset contains:
 * 1.67% active rate
 * 5,825 unique scaffolds
 
-The raw CSV is intentionally not committed until the exact PubChem assay provenance and curation procedure are fully documented.
+The raw CSV is intentionally not committed until the exact PubChem assay provenance and curation procedure are fully documented.See [`data/README.md`](data/README.md) for the expected schema and data-availability notes.
 
 ## Key results
 
@@ -83,16 +83,17 @@ Reward design and action-space design therefore need to be co-designed.
 
 ## Project components
 
-* `00_GPX1_interview_demo.ipynb.ipynb` — complete end-to-end interview demo
-* `01_model_development.ipynb` — molecular baseline and scaffold-aware evaluation
-* `02_active_learning.ipynb` — closed-loop active-learning campaigns
-* `03_rl_reward_engineering.ipynb` — reward design and reinforcement learning
-* `featurization.py` — molecular representation
-* `models.py` — surrogate models
-* `campaign.py` — campaign utilities
-* `environment.py` — discovery environment
-* `evaluation.py` — evaluation utilities
-* `policies.py` — acquisition policies
+* [`notebooks/00_GPX1_interview_demo.ipynb`](notebooks/00_GPX1_interview_demo.ipynb) — complete end-to-end interview demo
+* [`notebooks/01_model_development.ipynb`](notebooks/01_model_development.ipynb) — molecular baseline and scaffold-aware evaluation
+* [`notebooks/02_active_learning.ipynb`](notebooks/02_active_learning.ipynb) — closed-loop active-learning campaigns
+* [`notebooks/03_rl_reward_engineering.ipynb`](notebooks/03_rl_reward_engineering.ipynb) — reward design and reinforcement learning
+* [`src/featurization.py`](src/featurization.py) — molecular representation
+* [`src/models.py`](src/models.py) — surrogate models
+* [`src/campaign.py`](src/campaign.py) — campaign utilities
+* [`src/environment.py`](src/environment.py) — discovery environment
+* [`src/evaluation.py`](src/evaluation.py) — evaluation utilities
+* [`src/policies.py`](src/policies.py) — acquisition policies
+* [`data/README.md`](data/README.md) — dataset schema and provenance notes
 
 ## Design lessons
 
