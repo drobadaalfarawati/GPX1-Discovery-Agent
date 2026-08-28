@@ -1,0 +1,8 @@
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+.venv/
+venv/
+data/GPX1_curated_for_RL.csv
+results/cache/
+.DS_Store
